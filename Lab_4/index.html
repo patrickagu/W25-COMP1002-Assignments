@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <fieldset>
+  <legend>Personal Information</legend>
+  <form action="abc.php" method="get">
+  <label for="name">Name:</label>
+  <input type="text" name="name" id="name" required><br>
+  <label for="email">Email:</label>
+  <input type="email" name="email" id="email" required>
+  <label for="address">Address:</label>
+  <input type="text" name="address" id="address" required><br>
+  </form>
+  </fieldset>
+  <fieldset>
+  <legend>Review</legend>
+  <form action="abc.php" method="get">
+  <label for="review">How did you hear about us?:</label>
+  <select name="review" id="review">
+  <option value="website">Our Website</option>
+  <option value="social media">Social Media</option>
+  <option value="college">College Board</option>
+  <option value="newspaper">Newspaper</option>
+  <option value="friends">Colleagues</option>
+  <option value="search engine">Search Engine</option>
+  </select>
+  <br><label for="review">Would you like to visit again in the future?</label><br>
+  <input type="checkbox" name="visit" value="yes">Yes
+  <input type="checkbox" name="visit" value="no">No
+  <input type="checkbox" name="visit" value="maybe">Maybe
+  <br><label for="review">Would you recommend us to a family member, friend or colleague?</label><br>
+  <input type="checkbox" name="visit" value="yes">Yes
+  <input type="checkbox" name="visit" value="no">No
+  <input type="checkbox" name="visit" value="maybe">Maybe
+  <br><label for="review">Further comments (if any):</label><br>
+  <textarea name="review" cols="30" rows="6"></textarea>
+  <br><input type="checkbox" name="signup" checked="checked">
+  <label for="review">Click submit below to sign up with your email address</label>
+  <br><input type="submit" value="Submit review">
+  </form>
+  </fieldset>
+</body>
+</html>
