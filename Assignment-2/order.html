@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Order your favorite pizza online. Fill out the form and place your order.">
+    <meta name="keywords" content="pizza, order form, online order, pizza delivery">
+    <title>Patrick's Pizza Order Form</title>
+    <link rel="stylesheet" href="order_styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Patrick's Pizza Order Form</h2>
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="pizza_type">Pizza Type:</label>
+            <select id="pizza_type" name="pizza_type" required>
+                <option value="">Select a Pizza</option>
+                <option value="Pepperoni">Pepperoni</option>
+                <option value="Veggie">Vegetarian</option>
+                <option value="Tuna Fish">Tuna Fish</option>
+                <option value="custom">Custom</option>
+            </select>
+
+            <label for="size">Size:</label>
+            <select id="size" name="size" required>
+                <option value="">Select Size</option>
+                <option value="small">Small</option>
+                <option value="medium">Medium</order>
+                <option value="large">Large</option>
+            </select>
+
+            <div class="topping-group">
+                <label>Toppings:</label><br>
+                <input type="checkbox" id="pepperoni_topping" name="toppings[]" value="pepperoni">
+                <label for="pepperoni_topping">Pepperoni</label><br>
+                <input type="checkbox" id="mushrooms_topping" name="toppings[]" value="mushrooms">
+                <label for="mushrooms_topping">Mushrooms</label><br>
+                <input type="checkbox" id="onions_topping" name="toppings[]" value="onions">
+                <label for="onions_topping">Onions</label><br>
+                <input type="checkbox" id="olives_topping" name="toppings[]" value="olives">
+                <label for="olives_topping">Olives</label><br>
+                <input type="checkbox" id="extra_cheese_topping" name="toppings[]" value="extra_cheese">
+                <label for="extra_cheese_topping">Extra Cheese</label><br>
+            </div>
+
+            <label for="instructions">Special Instructions:</label>
+            <textarea id="instructions" name="instructions" rows="4"></textarea>
+
+            <button type="submit">Order Now</button>
+        </form>
+        <hr>
+        <h3>Our Available Pizzas:</h3>
+        <div class="pizza-card">
+            <img src="pepperoni_pizza.jpg" alt="Pepperoni Pizza">
+            <h3>Pepperoni Pizza</h3>
+            <p>Classic pepperoni with delicious cheese.</p>
+        </div>
+        <div class="pizza-card">
+            <img src="vegetarian_pizza.jpg" alt="Veggie Pizza">
+            <h3>Veggie Pizza</h3>
+            <p>Loaded with fresh vegetables, tomato and cheese.</p>
+        </div>
+        <div class="pizza-card">
+            <img src="Tuna_Pizza.jpg" alt="Tuna Fish Pizza">
+            <h3>Tuna Fish Pizza</h3>
+            <p>Packed with Tuna Fish and Sweetcorn.</p>
+        </div>
+    </div>
+</body>
+</html>
